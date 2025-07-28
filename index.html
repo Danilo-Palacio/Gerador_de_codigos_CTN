@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Códigos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form id="meuFormulario">
+        <h1 class="title" id="title">Gerador de Códigos</h1>
+        <div id="display">
+          
+          <input type="text" name="matricula" id="matricula" placeholder="Matricula"> 
+          <input type="text" name="codigo" id="codigo" placeholder="Codigo de serviço">   
+          
+        
+          <button class="button" type="submit" id="bt_merge">Gerar e Copiar</button>
+          <br>
+          <div class="result">
+              <p id="result"></p>
+              <!--<button  class="copy"type="enviar" id="meuBotao">Copiar</button>-->
+          </div>
+        </div>
+    </form>
+    <br>
+    <form id="correcao_cpf">
+        <h1 class="title" id="titleCPF">Correção de CPF</h1>
+        <div id="display_cpf">
+          
+          <input type="text" name="textCPF" id="textCPF">
+        
+          <button class="button" type="submit" id="bt_text_cpf">Corrigir e Copiar</button>
+          <br>
+          <div class="result">
+              <p id="resultCPF"></p>
+              <!--<button  class="copy"type="enviar" id="meuBotao">Copiar</button>-->
+          </div>
+        </div>
+    </form>
+
+    <br>
+    
+    <form id="relatorio">
+      <h1 class="title" id="title1">Relatórios</h1>
+      <div id="display1">
+        
+        <input type="date" name="start" id="start">
+        <input type="date" name="end" id="end">
+        <button class="button" type="submit" id="baixarFiliacao"> Baixar Filiação</button>
+
+        <input type="month" name="referencia" id="referencia">
+        <button class="button" type="submit" id="baixarMigracao"> Baixar Migração</button>
+      </div>
+    </form>
+
+    
+</body>
+<script src="script.js"></script>
+</html>
